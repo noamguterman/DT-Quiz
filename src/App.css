@@ -1,0 +1,186 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 3em;
+  text-align: center;
+}
+
+body {
+  background: url('/assets/images/dt-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.btn {
+  display: block;
+}
+
+.btn.next {
+  background-color: #cb6464;
+  margin: 0 auto;
+}
+
+.btn.play {
+  margin: 0 auto;
+}
+
+.app {
+  margin: 0 auto;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+.start-screen {
+  text-align: center;
+}
+
+.start-button {
+  font-size: 1.2rem;
+  padding: .625em 1.25em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+}
+
+.error {
+  color: #ff0000;
+  text-align: center;
+  padding: .625em;
+}
+
+.song-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.album-cover {
+  width: 100px;
+  border-radius: 5px;
+  margin-right: .5em;
+}
+
+.album-name {
+  color: #909090;
+  margin: 0;
+  font-size: .8rem;
+}
+
+.song-title {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .625em;
+  margin: 0;
+}
+
+.option-button {
+  padding: 1em;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  background-color: rgb(75, 75, 75);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.option-button:hover:not(:disabled) {
+  background-color: #7f7f7f;
+}
+
+.option-button.correct {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #45a049;
+}
+
+.option-button.incorrect {
+  background-color: #f44336;
+  color: white;
+  border-color: #da190b;
+}
+
+.option-button:disabled {
+  cursor: not-allowed;
+}
+
+.controls {
+  display: flex;
+  gap: .625em;
+  justify-content: center;
+}
+
+.control-button {
+  padding: .625em 1.25em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #2196F3;
+  color: white;
+}
+
+.control-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.play {
+  background: none;
+  font-size: 1.5rem;
+}
+
+.next {
+  background-color: #2196F3;
+}
+
+.results {
+  background-color: #7e6eb8;
+  padding: 1em 0;
+}
+
+.score-correct {
+  color: #7e6eb8;
+  margin: 0;
+  font-size: .8rem;
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
+#dt-logo {
+  width: 100px;
+}
+
+footer {
+  position: fixed;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: .6rem;
+}
+
+h1 {
+  margin-top: 0;
+}
