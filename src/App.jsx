@@ -114,7 +114,7 @@ function App() {
         <>
           <Confetti numberOfPieces={100} recycle={false} />
           <audio ref={confettiAudioRef}>
-            <source src={'/assets/audio/confetti.mp3'} type='audio/mp3'></source>
+            <source src={'/dt-quiz/assets/audio/confetti.mp3'} type='audio/mp3'></source>
           </audio>
         </>
       }
@@ -122,7 +122,7 @@ function App() {
       {!isPlaying &&
       !showResults &&
         <div className="start-screen">
-          <img id="dt-logo" src={'/assets/images/dt-logo.svg'} />
+          <img id="dt-logo" src={'/dt-quiz/assets/images/dt-logo.svg'} />
           <h1>Dream Theater Song Quiz</h1>
           <button className="start-button" onClick={handleStart}>Start</button>
         </div>}
@@ -131,9 +131,9 @@ function App() {
       showResults &&
         <div className='results-screen'>
           <audio ref={gameOverAudioRef}>
-            <source src={'/assets/audio/gameover.mp3'} type='audio/mp3'></source>
+            <source src={'/dt-quiz/assets/audio/gameover.mp3'} type='audio/mp3'></source>
           </audio>
-          <img id="dt-logo" src={'/assets/images/dt-logo.svg'} />
+          <img id="dt-logo" src={'/dt-quiz/assets/images/dt-logo.svg'} />
           <p>You guessed {score} out of {songs.length} songs correctly!</p>
           <button className="start-button" onClick={handleStart}>Play Again</button>
         </div>}
